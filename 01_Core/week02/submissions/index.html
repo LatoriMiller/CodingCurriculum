@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <title>Electric Car Spot</title>
+</head>
+<body>
+<div id="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/">Charging</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Need Help?</a></li>
+                <div class="dropdown">
+                        <li><a href="/">Cars</a></li>
+                        <div class="dropdown-content">
+                          <a href="https://tesla.com">Tesla</a>
+                          <a href="https://rivian.com">Rivian</a>
+                          <a href="https://www.bmwusa.com/vehicles/bmwi/i3/sedan/overview.html">BMW</a>
+                        </div>
+                </div>
+            </ul>
+        </nav>
+
+    
+        <header class="clearfix">
+            <h1>The Electric Car Spot</h1>
+        </header>
+
+        <section>
+            <h2>Everything you need to know to drive electric</h2>
+        </section>
+
+        <section>
+            <h2>Learn more!</h2>
+            <p>We are a fictional automotive dealer</p>
+        </section>
+        <section>
+            <h3>We have cars in all the colors of the rainbow</h3>
+            <ul class="rainbow">
+                <li id="orange">Orange</li>
+                <li id ="yellow">Yellow</li>
+                <li id="green">Green</li>
+                <li id="blue">Blue</li>
+                <li id="indigo">Indigo</li>
+                <li id="violet">Violet</li>
+            </ul>
+        </section>
+        <div id="names"></div>
+
+        <footer>
+            <p>&copy; 2020 The Electric Car Spot</p>
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+            <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+        </footer>
+</div>   
+       
+    
+        <aside>
+            <!-- Add a sidebar with links to outside content. -->
+            <!-- tesla, nissan and other vendors -->
+            <!-- Sidebar -->
+            <div>
+                <h3 class="">Check out Electric Cars Now</h3>
+                <a href="https://tesla.com">Tesla</a>
+                <a href="https://rivian.com">Rivian</a>
+                <a href="https://www.bmwusa.com/vehicles/bmwi/i3/sedan/overview.html">BMW</a>
+            </div>
+        </aside>
+</body>
+<script>   
+    // Stack overflow solution
+    //https://stackoverflow.com/questions/39050438/how-to-sort-and-format-last-names-in-an-array-alphabetically-in-javascript
+    var nameArray = ["Latori Miller", "Lucy Yang", "Reggie Johnson", "Dyl Trimble", "Leland Capps"];
+    
+    // function alphabetizer(names) {
+    //     return names.map(function(name) {
+    //         var full = name.split(" "),
+    //         last = full.pop();
+    //         return " " + last + " " + full.join(" ");
+    //         //return last + ", " + full.join(" ");
+    //     }).sort();
+    // }  
+
+    // go break into arrays for each 1st and last name e.g. ["Latori", "Miller"]
+    // remove the last item from each array using pop
+    // then combine and sort
+    function alphabetizer(names) {
+        return names.map(function(name) {
+            var full = name.split(" ");
+            last = full.pop();
+            return  last + " " + full.join();
+        }).sort();
+    } 
+
+    console.log(alphabetizer(nameArray));
+    var sortedArray = alphabetizer(nameArray);
+
+    // need to reverse to display names correctly
+    // this function will reverse the names 
+    //Question - Could I have combined the .sort and the .reverse in one function 
+    function displayName(names) {
+        return names.map(function(name) {
+            var full = name.split(" ");
+            full = full.reverse();
+            last = full.pop();
+            return  " " + full.join() + " " + last;
+        })
+    }
+    var correctNames = displayName(sortedArray);
+    console.log(correctNames);
+     
+
+    // Solution that works for first names
+    // https://davidwells.io/snippets/sort-an-array-alphabetically-in-javascript
+    // var nonSortedNames = ['latori', 'nastassja', 'artie', 'amanda', 'melanie'];
+    // var sortedNames = nonSortedNames.sort(function (a, b) {
+    //   if (a < b) return -1;
+    //   else if (a > b) return 1;
+    //   return 0;
+    // });
+    // console.log(sortedNames); // ["amanda", "artie", "latori", "melanie", "nastassja"]
+
+    document.getElementById("names").innerHTML = correctNames;
+</script>
+</html>

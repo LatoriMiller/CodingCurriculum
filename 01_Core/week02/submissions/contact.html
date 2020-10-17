@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+
+<body id="container">
+    <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/">Charging</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Need Help?</a></li>
+                <div class="dropdown">
+                        <li><a href="/">Cars</a></li>
+                        <div class="dropdown-content">
+                            <a href="https://tesla.com">Tesla</a>
+                            <a href="https://rivian.com">Rivian</a>
+                            <a href="https://www.bmwusa.com/vehicles/bmwi/i3/sedan/overview.html">BMW</a>
+                        </div>
+                </div>
+            </ul>
+        </nav>
+        
+    <div id="form_container">
+        <header>
+            <h1>Need Help?</h1>
+            <p>Complete the form</p>
+        </header>
+       
+        <section>
+            <form action="/offToNoWhere" method="get">
+                <fieldset>
+                    <legend>Tell Us About You</legend>
+                    <label for="first_name">First Name</label>  
+                    <input type="text" id="first_name" placeholder="Jane"><br><br>
+
+                    <label for="last_name">Last Name</label>  
+                    <input type="text" id="last_name" placeholder="Miller"><br><br>
+
+                    <label for="gender">Gender</label><br> 
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label><br/>
+                    
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label><br/><br/>
+                    
+                    <label for="sport">Favorite Sport</label><br/>
+                    <input list="sport">
+                        <datalist id="sport">
+                            <option value="Soccer">
+                            <option value="Basketball">
+                            <option value="Track & Field">
+                            <option value="Volleyball">
+                            <option value="Swimming">
+                        </datalist><br/><br/>
+
+                    <label for="pizza_top">Pizza Topping</label><br/>
+                    <input type="checkbox" id="cheese" name="pizza_top">
+                    <label for="cheese">Cheese</label><br/>
+                
+                    <input type="checkbox" id="onion" name="pizza_top">
+                    <label for="onion">Onion</label><br/>
+                
+                    <input type="checkbox" id="mushroom" name="pizza_top">
+                    <label for="mushroom">Mushroom</label><br/>
+
+                    <input type="checkbox" id="spinach" name="pizza_top">
+                    <label for="spinach">Spinach</label><br/>
+
+                    <input type="checkbox" id="green_pepper" name="pizza_top">
+                    <label for="green_pepper">Green Pepper</label><br/><br>
+
+                    <input type="submit" value="Save">
+                </fieldset>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2020 The Electric Car Spot</p>
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+            <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+        </footer>
+    </div>
+    
+</body>
+</html>
