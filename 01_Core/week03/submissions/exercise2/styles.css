@@ -1,0 +1,27 @@
+/* Question about the 8px margin that is showing up in browser */
+
+.container {
+    margin: 0 auto;
+    width: 220px;
+}
+.interior {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+
+/* How to rotate the last div */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate */
+.interior:last-child {
+    background-color: red;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -150px;
+    transform: rotate(45deg);
+
+
+}
+
+
+
