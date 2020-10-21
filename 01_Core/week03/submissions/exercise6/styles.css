@@ -9,20 +9,43 @@
     width: 100px;
     border: 5px rgb(249, 245, 245) solid;
 }
+
+/* Need to continue to move the red and orange divs */
 .div1 {
     background: #ff0000;
+    margin-left: 20%;
+    z-index: 1;
 }
 .div2 {
     background: #ffa601;
+    transform: rotate(15deg);
+    position: absolute;
+    margin-left: 5px;
+    z-index: -1;
 }
 .div3 {
     background: #ffff02;
+    transform: rotate(40deg);
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -100px; 
+    z-index: 3;
 }
 
 .div4 {
     background: #0000ff;
+    transform: rotate(25deg);
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -190px;
+    z-index: 4;
 }
 
 .div5 {
     background: #f07ef0;
+    transform: rotate(15deg);
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -280px;
+    z-index: 5;
 }
