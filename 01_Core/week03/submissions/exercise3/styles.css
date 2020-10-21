@@ -1,0 +1,86 @@
+/* Question about the 8px margin that is showing up in browser */
+
+.container {
+    margin: 0 auto;
+    width: 220px;
+}
+.interior {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+
+/* How to create the circle and star shapes */
+/* https://css-tricks.com/the-shapes-of-css/ */
+.interior:last-child {
+    background-color: red;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -150px;
+    transform: rotate(45deg);
+}
+
+/* NOT WORKING */
+/* https://www.w3schools.com/cssref/sel_before.asp */
+.interior .div5 {
+    /* position: absolute;
+    margin-top: -50px;
+    margin-left: -150px; */
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+}
+
+#circle {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+}
+
+#star-five {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: black;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid black;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+  }
+
+  #star-five:before {
+    border-bottom: 80px solid black;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+
+  #star-five:after {
+    position: absolute;
+    display: block;
+    color: black;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid black;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+
+
+

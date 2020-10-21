@@ -1,0 +1,147 @@
+/* I need to move the center the items and practice the positioning */
+
+.container {
+    position: relative;
+}
+
+.interior {
+    margin-bottom: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+.div1 {
+    background-color: #ff4b47;
+    position: absolute;
+    top: 0px;
+    left: 120px;
+}
+
+.div1::before {
+    background:#ff9897;
+    height: 100px;
+    width: 100px;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -120px;
+}
+
+.div1::after {
+    background-color: #ff0000;
+    height: 100px;
+    width: 100px;
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -120px;
+}
+
+.div2 {
+    background-color: #ffc13f;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+}
+
+.div2::before {
+    background: #ffdc96;
+    height: 100px;
+    width: 100px;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -120px;
+}
+
+.div2::after {
+    background-color: #ffa601;
+    height: 100px;
+    width: 100px;
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -120px;
+}
+
+.div3 {
+    background-color: #ffff36;
+    position: absolute;
+    top: 240px;
+    left: 120px;
+}
+
+.div3::before {
+    background: #ffff93;
+    height: 100px;
+    width: 100px;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -120px;
+}
+
+.div3::after {
+    background-color:#ffff02;
+    height: 100px;
+    width: 100px;
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -120px;
+}
+
+.div4 {
+    background-color: #4d43ff;
+    position: absolute;
+    top: 360px;
+    left: 120px;
+}
+
+.div4::before {
+    background: #9a96ff;
+    height: 100px;
+    width: 100px;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -120px;
+}
+
+.div4::after {
+    background-color: #0000ff;
+    height: 100px;
+    width: 100px;
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -120px;
+}
+
+.div5 {
+    background-color: #f4a5f5;
+    position: absolute;
+    top: 480px;
+    left: 120px;
+}
+
+.div5::before {
+    background: #f9ccf9;
+    height: 100px;
+    width: 100px;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -120px;
+}
+
+.div5::after {
+    background-color: #f07ef0;
+    height: 100px;
+    width: 100px;
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -120px;
+}
+

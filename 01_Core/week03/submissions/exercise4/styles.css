@@ -1,0 +1,28 @@
+.container {
+    width: 550px;
+    margin: 10% auto;
+}
+
+.interior {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 5px rgb(249, 245, 245) solid;
+}
+.div1 {
+    background: #ff0000;
+}
+.div2 {
+    background: #ffa601;
+}
+.div3 {
+    background: #ffff02;
+}
+
+.div4 {
+    background: #0000ff;
+}
+
+.div5 {
+    background: #f07ef0;
+}
