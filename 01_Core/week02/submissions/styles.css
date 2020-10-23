@@ -105,7 +105,12 @@ h1 {
     color: red;
     font-weight: bold;
 }
-
+/* redText class Not used */
+/* https://stackoverflow.com/questions/11356502/how-to-include-css-inside-a-javascript-file */
+.redText {
+    color: red;
+    font-weight: bold;
+}
 
 footer {
     text-align: center;

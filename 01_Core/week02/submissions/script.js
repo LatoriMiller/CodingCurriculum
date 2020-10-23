@@ -11,7 +11,8 @@
             //split each Name first step
             var newName = nameArray[i].split(" ");
             // reversing the names below
-            namesLastFirst.push(`${newName[1]} ${newName[0]}`);            
+            namesLastFirst.push(`${newName[1]} ${newName[0]}`); 
+                    //push just the firstname into a variable OR can I add styles to just newName[1]
         }
     }
 
@@ -24,7 +25,7 @@
         for (i=0; i < namesLastFirst.length; i++){
             console.log(namesLastFirst[i]); 
             var node = document.createElement("LI");
-            var textnode = document.createTextNode(`${namesLastFirst[i]}`);       
+            var textnode = document.createTextNode(`${namesLastFirst[i]}`);     
             node.appendChild(textnode);                  
             document.getElementById("namesList").appendChild(node);    
         }
