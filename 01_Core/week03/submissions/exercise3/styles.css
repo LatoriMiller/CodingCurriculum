@@ -9,6 +9,7 @@
     height: 100px;
     width: 100px;
     background-color: blue;
+    /* margin: 2px; */
 }
 
 /* How to create the circle and star shapes */
@@ -21,18 +22,29 @@
     transform: rotate(45deg);
 }
 
-/* NOT WORKING */
-/* https://www.w3schools.com/cssref/sel_before.asp */
-.interior .div5 {
-    /* position: absolute;
-    margin-top: -50px;
-    margin-left: -150px; */
-    width: 20px;
-    height: 20px;
-    background: white;
-    border-radius: 50%;
+/* Add the circle */
+.div5::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: white;
+    margin: 25%;
 }
 
+/* Add the star symbol  */
+.div5::after {
+    position: absolute;
+    content: '\204E'; 
+    font-size: 60px;
+    margin-left: -65%;
+}
+
+
+
+/* NOT USED */
+/* https://www.w3schools.com/cssref/sel_before.asp */
 #circle {
     width: 20px;
     height: 20px;
