@@ -9,6 +9,7 @@
     height: 100px;
     width: 100px;
     background-color: blue;
+    margin: 2px 2px;
 }
 
 /* How to grab the last div */
@@ -18,8 +19,6 @@
     position: absolute;
     margin-top: -50px;
     margin-left: -150px;
-
-
 }
 
 
