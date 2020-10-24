@@ -21,12 +21,15 @@
     background: #ffff02;
 }
 
-/* Need to make divs overlap */
 .div4 {
     background: #0000ff;
     margin-left: 15%;
+    margin-top: -20%;
+    z-index: 1;
 }
 
 .div5 {
     background: #f07ef0;
+    margin-top: -15%;
+    z-index: 1;
 }
