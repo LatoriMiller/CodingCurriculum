@@ -13,22 +13,22 @@
 /* Need to continue to move the red and orange divs */
 .div1 {
     background: #ff0000;
-    margin-left: 20%;
+    margin-left: 30%;
     z-index: 1;
 }
 .div2 {
     background: #ffa601;
-    transform: rotate(15deg);
+    transform: rotate(60deg);
     position: absolute;
-    margin-left: 5px;
+    margin-left: 50px;
     z-index: -1;
 }
 .div3 {
     background: #ffff02;
-    transform: rotate(40deg);
+    transform: rotate(60deg);
     position: absolute;
     margin-top: 100px;
-    margin-left: -100px; 
+    /* margin-left: 60px;  */
     z-index: 3;
 }
 
@@ -37,7 +37,7 @@
     transform: rotate(25deg);
     position: absolute;
     margin-top: 50px;
-    margin-left: -190px;
+    margin-left: -80px;
     z-index: 4;
 }
 
@@ -46,6 +46,6 @@
     transform: rotate(15deg);
     position: absolute;
     margin-top: 50px;
-    margin-left: -280px;
+    margin-left: -170px;
     z-index: 5;
 }
