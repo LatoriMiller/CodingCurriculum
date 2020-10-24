@@ -1,18 +1,17 @@
-/* I need to move the center the items and practice the positioning */
 
 .container {
     position: relative;
+    margin: 5% 40%;
 }
 
 .interior {
     margin-bottom: 20px;
     height: 100px;
     width: 100px;
+    position: absolute;
 }
-
 .div1 {
     background-color: #ff4b47;
-    position: absolute;
     top: 0px;
     left: 120px;
 }
@@ -39,7 +38,6 @@
 
 .div2 {
     background-color: #ffc13f;
-    position: absolute;
     top: 120px;
     left: 120px;
 }
@@ -66,7 +64,6 @@
 
 .div3 {
     background-color: #ffff36;
-    position: absolute;
     top: 240px;
     left: 120px;
 }
@@ -93,7 +90,6 @@
 
 .div4 {
     background-color: #4d43ff;
-    position: absolute;
     top: 360px;
     left: 120px;
 }
@@ -120,7 +116,6 @@
 
 .div5 {
     background-color: #f4a5f5;
-    position: absolute;
     top: 480px;
     left: 120px;
 }
