@@ -1,0 +1,41 @@
+/* Shared CSS across all HTML pages */
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Navigation Bar */
+.navBar {
+    overflow: hidden;
+  }
+  
+/* Navigation Links */
+.navBar a {
+  font-family: 'Oswald', sans-serif;
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+  
+.navBar a:hover {
+  border-bottom: 3px solid goldenrod;
+}
+
+.navBar a.active {
+  border-bottom: 3px solid goldenrod;
+}
+
+.navBar #navLogo {
+    float: right;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+
+.clearfix {
+    clear: both;
+}
