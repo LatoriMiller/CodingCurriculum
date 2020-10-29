@@ -1,0 +1,93 @@
+body{
+    background: whitesmoke;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "cover content";
+}
+
+/* Image needs to be displayed correctly in .cover */
+.cover{
+    grid-area: cover;
+    height: 80vh;
+    background-image: url('/images/salonTools.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.content{
+    grid-area: content;
+    background:#efefef;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.content-body{
+    display: flex;
+    flex-direction: row;
+} 
+
+.productDetail {
+    width: 80%;
+    margin: 10% auto;
+}
+
+.productDetail h1 {
+    color: goldenrod;
+    font-family: 'Satisfy';
+    font-weight: bold;
+    font-size: 3.2rem;    
+}
+
+.productDetail h3 {
+    font-family: 'Open Sans';
+}
+
+.productDetail p {
+    font-family: 'Trispace';
+    font-weight: lighter;
+    font-size: 16px;
+    width: 70%;
+}
+
+.price {
+    margin: 50px 0px;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    border-left: 4px solid goldenrod;
+    padding-left: 10px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.cart {
+    display: block;
+    font-family: 'Oswald';
+}
+
+.cart input {
+    display: block;
+    padding: 1.2%;
+    width: 5%;
+}
+
+form input[type="submit"]{
+    background: #2055DA;
+    color: white;
+    cursor: pointer;
+    width: 95%;
+    padding: 2%;
+    margin: 10% auto;
+    font-family: 'Trispace';
+}
