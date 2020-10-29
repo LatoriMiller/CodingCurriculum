@@ -1,0 +1,30 @@
+/* Search Page*/
+#searchContainer {
+    width: 600px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Oswald';
+    font-weight: lighter;
+    text-align: center;
+    padding: 1% 0 18%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+#searchContainer h1 {
+    font-family: 'Satisfy';
+    font-weight: bold;
+    color: goldenrod;
+}
+
+#searchBox input {
+    display: block;
+    width: 290px;
+    padding: 5px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: 'Trispace';
+    font-style: italic;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
