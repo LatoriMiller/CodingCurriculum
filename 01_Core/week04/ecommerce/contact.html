@@ -7,6 +7,7 @@
     <title>Contact Us</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;300;400;500;600;700&family=Satisfy&family=Trispace:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <nav class="navBar">      
@@ -20,7 +21,34 @@
         </span>       
     </nav>
 
-    <h1>Contact</h1>
+
+<!-- Header Section -->
+    <header id="pageLogo">
+        <img class="logo" src="images/SalonLatoriLogo.png" alt="Salon Latori"> 
+    </header>
+
+<!-- Appointment/ Contact Form -->
+    <div id="container">    
+        <section id="content" class="content-block">
+            <h1>Book an Appointment</h1>
+            <p>Time to look good.</p>
+        </section>
+    
+        <section id="appointment" class="content-block">
+            <form>
+                <label for="your_name">Your Name</label>  
+                <input type="text" id="your_name" placeholder="Jane Miller">
+
+                <label for="your_email">Your Email</label>  
+                <input type="text" id="your_email" placeholder="your@email.com">
+
+                <label for="your_time">Appointment Time</label>  
+                <input type="text" id="your_time" placeholder="Tomorrow at 1pm">
+
+                <input type="submit" value="book now">
+            </form>
+        </section>
+    </div>
 
     <footer id="footer">
         <p>&copy2020 Salon Latori</p> 
