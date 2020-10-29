@@ -90,4 +90,9 @@ form input[type="submit"]{
     padding: 2%;
     margin: 10% auto;
     font-family: 'Trispace';
+    font-style: italic;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    border-radius: 3px;
 }
