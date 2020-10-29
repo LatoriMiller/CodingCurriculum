@@ -1,0 +1,23 @@
+#filter {
+    /* border-top: 1px lightgrey solid; */
+    border-bottom: 1px lightgrey solid;
+    padding: 1%;
+    text-align: center;
+    font-family:'Trispace';
+}
+
+.productContainer{
+    margin: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    padding-top: 6%;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Trispace';
+    color: grey;
+ 
+}
