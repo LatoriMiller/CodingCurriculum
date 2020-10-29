@@ -7,22 +7,72 @@
     <title>Salon Latori</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;300;400;500;600;700&family=Satisfy&family=Trispace:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/home.css">
+    
+    
 </head>
 <body>
+<!-- Navigation Section -->
     <nav class="navBar">      
         <a href="/index.html" class="active">HOME</a>
         <a href="/products.html">PRODUCTS</a>
-        <a href="/contact.html">CONTACT</a>
         <a href="/detail.html">DETAILS</a>
         <a href="/search.html">SEARCH</a>
+        <a href="/contact.html">CONTACT</a>
         <span id="navLogo">
             <a href="/index.html">SALON LATORI</a>
         </span>       
     </nav>
 
+<!-- Header Section -->
+    <header id="pageLogo">
+        <img class="logo" src="images/SalonLatoriLogo.png" alt="Salon Latori"> 
+    </header>
+
+<!-- Hero Slideshow -->
+    <section id="slideSection">
+        <div class="hero-image">    
+            <div class="mySlides fade">
+                <img src="images/salonLocation.jpg" style="width:100%">
+                <div class="text">A Lovely Location</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="images/salonTools.jpg" style="width:100%">
+                <div class="text">Master Stylists</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="images/salonMakeup.jpg" style="width:100%">
+                <div class="text">Renowed Beauty Services</div>
+            </div>
+        </div>
+        <br>
+    
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+    </section>
+
+<!-- Featured Product Section -->
+    <hgroup>
+        <h2>Salon Featured Products</h2>
+    </hgroup>
+
+    <section id="feature">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRFTjOnhm-NKcYgRsYsQMvjFvijCblEL98CFOOe8lT9oVWVEN6A0g&usqp=CAc" alt="flatiron">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR82gd5L76QwA8buHzPtuxnJfB4bJ9WsUY5us_JiPsk44kxW--QSg&usqp=CAc" alt="blowdry brush">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcStiizScpu0R2g5_rVlhJNmg_YdPDnVMWGRq0BBXoiHHWRUlcYv1Jk&usqp=CAc"
+        alt="curling iron">
+    </section>
+
+<!-- Footer Section -->
     <footer id="footer">
         <p>&copy2020 Salon Latori</p> 
     </footer>
-    
+
+    <script src="scripts.js"></script>
 </body>
 </html>

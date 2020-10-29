@@ -1,0 +1,78 @@
+/* Slide Show */
+.mySlides {
+    display: none;
+}
+
+/* Hero text container */
+.hero-image {
+    top: 20px;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
+}
+  
+/* Caption text */
+.text {
+    color: rgb(144, 131, 71);
+    font-family: 'Trispace';
+    font-size: 1.5em;
+    padding: 8px 12px;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+/* Dot Indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#slideSection .active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+h2 {
+    padding-top: 20px;
+    font-family: 'Satisfy';
+    font-weight: bold;
+    font-size: 3em;
+    color: goldenrod;
+    text-align: center;
+}
+
+#feature {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 10px;
+    margin: 2% 5% 7%;
+}
