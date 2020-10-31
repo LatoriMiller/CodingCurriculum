@@ -8,8 +8,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200;300;400;500;600;700&family=Satisfy&family=Trispace:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/shared.css">
     <link rel="stylesheet" href="css/search.css">
+    <script src="https://kit.fontawesome.com/39ad4876af.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Hamburger Menu -->
+    <nav id="tabMenu">
+        <a id="tabLogo" href="/index.html">SALON LATORI</a> 
+        <div class="dropdown">
+            <i class="fas fa-bars fa-3x" class="dropbtn"></i>
+            <div class="dropdown-content">
+                <a href="/products.html">PRODUCTS</a>
+                <a href="/detail.html">DETAILS</a>
+                <a href="/search.html">SEARCH</a>
+                <a href="/contact.html">CONTACT</a>
+            </div>
+        </div>   
+    </nav>
+
+    <!-- Desktop Menu -->
     <nav class="navBar">      
         <a href="/index.html">HOME</a>
         <a href="/products.html">PRODUCTS</a>
@@ -34,8 +50,8 @@
         
         <section id="searchBox">  
             <form>
-                <label for="search"></label>  
-                <input type="text" id="search" placeholder="Search">
+                <label for="search"></label>
+                <input type="text" id="search" placeholder="Search">  
             </form>
         </section>
     </div>
