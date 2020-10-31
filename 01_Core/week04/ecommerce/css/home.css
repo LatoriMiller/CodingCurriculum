@@ -22,7 +22,8 @@
   
 /* Caption text */
 .text {
-    color: rgb(144, 131, 71);
+    /* color: rgb(144, 131, 71); */
+    color: #2055DA;
     font-family: 'Trispace';
     font-size: 1.4em;
     padding: 8px 12px;
@@ -81,3 +82,11 @@ h2 {
     padding: 10px 0 10px;
     margin: 2% 5% 7%;
 }
+
+@media (max-width:800px) {
+    .text {font-size: 12px}
+}
+
+/* @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+} */

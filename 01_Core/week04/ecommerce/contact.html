@@ -37,37 +37,37 @@
         <section id="appointment" class="content-block">
             <form>
                 <label for="your_name">Your Name</label>  
-                <input type="text" id="your_name" placeholder="Jane Miller">
+                <input type="text" id="your_name" placeholder="Jane Miller" required>
 
                 <label for="your_email">Your Email</label>  
-                <input type="text" id="your_email" placeholder="your@email.com">
+                <input type="text" id="your_email" placeholder="your@email.com" required>
 
                 <label for="your_phone">Your Phone</label>  
-                <input type="text" id="your_phone" placeholder="(704)123-4567">
+                <input type="text" id="your_phone" placeholder="(704)123-4567" required>
 
                 <label for="your_time">Appointment Time</label>  
-                <input type="text" id="your_time" placeholder="Tomorrow at 1pm">
+                <input type="text" id="your_time" placeholder="Tomorrow at 1pm" required>
 
-                <!-- <label for="preferContact">Preferred Contact Method?</label>
-                    <div class="radioArea">
-                        <input type="radio" id="phone" name="preferContact">
-                        <label for="phone">Phone</label>
-                        <input type="radio" id="email" name="preferContact">
-                        <label for="email">Email</label>
-                    </div>
-
-                <label for="hear">How did you hear about us?</label> 
-                    <div class="checkArea">
-                        <input type="checkbox" id="tv" name="hear">
-                        <label for="tv">TV</label>
-                        <input type="checkbox" id="radio" name="hear">
-                        <label for="radio">Email</label> 
-                        <input type="checkbox" id="word" name="hear">
-                        <label for="word">Word of Mouth</label>
-                    </div>   -->
+                <label for="preferContact">Preferred Contact Method?</label>
+                <input type="radio" id="phone" name="preferContact" value="phone">
+                <label for="phone" name="preferContact">Phone</label><br>
+                <input type="radio" id="email" name="preferContact" value="email">
+                <label for="email" name="preferContact">Email</label><br>
+                
+                <label for="hear">How did you hear about us?</label>
+                <input type="checkbox" id="conf" name="hear">
+                <label for="conf" name="hear">Conference</label>
+                <input type="checkbox" id="tv" name="hear">
+                <label for="tv" name="hear">TV</label>
+                <input type="checkbox" id="radio" name="hear">
+                <label for="radio" name="hear">Radio</label> 
+                <input type="checkbox" id="word" name="hear">
+                <label for="word" name="hear">Word of Mouth</label> 
+                <input type="checkbox" id="other" name="hear">
+                <label for="other" name="hear">Other</label>
                 
                 <label for="comments">Comments</label>
-                <textarea id="comments" name="comments" rows="5" cols="35"></textarea>
+                <textarea id="comments" name="comments"></textarea>
 
                 <input type="submit" value="book now">
             </form>

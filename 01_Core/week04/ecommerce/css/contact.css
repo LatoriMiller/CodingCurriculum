@@ -56,6 +56,23 @@ form input {
     text-rendering: optimizeLegibility;
 }
 
+form label[name="preferContact"], form input[name="preferContact"] {
+    display: inline-block;
+    width: auto;
+    background-color: white;
+    color: black; 
+    font-style: italic;
+}
+
+form label[name="hear"], form input[name="hear"] {
+    display: inline-block;
+    width: auto;
+    background-color: white;
+    color: black; 
+    font-style: italic;
+    padding: 2%;
+}
+
 form input[type="submit"]{
     background:goldenrod;
     color: white;
@@ -63,10 +80,10 @@ form input[type="submit"]{
     width: 300px;
 }
 
-/* .container checkArea input {
-    display: inline-block;
+textarea {
+    height: 120px;
+    width: 100%;
+    border: none;
+    font-style: italic;
 }
 
-.container radioArea input {
-    display: inline-block;
-} */
