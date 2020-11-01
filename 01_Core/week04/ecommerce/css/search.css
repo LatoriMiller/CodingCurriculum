@@ -28,3 +28,9 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
+
+@media screen and (max-width: 800px) {
+    #searchContainer { 
+        padding: 1% 0 40%; 
+    }
+}

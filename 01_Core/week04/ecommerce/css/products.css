@@ -11,7 +11,8 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-}
+} 
+
 .card {
     padding-top: 6%;
     max-width: 300px;
@@ -19,5 +20,13 @@
     text-align: center;
     font-family: 'Trispace';
     color: grey;
- 
+}
+.card img {
+    height: 200px;
+}
+/* Add quickshop option */
+.card:hover {
+    opacity: 0.5;
+    color: #2055DA;
+
 }
