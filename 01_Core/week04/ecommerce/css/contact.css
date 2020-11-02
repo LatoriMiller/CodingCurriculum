@@ -55,6 +55,9 @@ form input {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
+form input[type="datetime-local"] {
+    color: grey;
+}
 
 form label[name="preferContact"], form input[name="preferContact"] {
     display: inline-block;

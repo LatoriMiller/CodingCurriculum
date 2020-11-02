@@ -51,22 +51,27 @@
     
         <section id="appointment" class="content-block">
             <form>
-                <label for="your_name">Your Name</label>  
-                <input type="text" id="your_name" placeholder="Jane Miller" required>
+                <label for="first_name">First Name</label>  
+                <input type="text" id="first_name" placeholder="Jane" pattern="[a-zA-Z]+" required title="Enter a name e.g. Beyonce.">
+
+                <label for="last_name">Last Name</label>  
+                <input type="text" id="last_name" placeholder="Miller" pattern="[a-zA-Z]+" required title="Enter a last name e.g. Carter.">
 
                 <label for="your_email">Your Email</label>  
-                <input type="text" id="your_email" placeholder="your@email.com" required>
+                <input type="text" id="your_email" placeholder="your@email.com" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$" required title="Enter a valid email e.g. sashafierce@gmail.com.">
 
                 <label for="your_phone">Your Phone</label>  
-                <input type="text" id="your_phone" placeholder="(704)123-4567" required>
+                <input type="text" id="your_phone" placeholder="704-123-4567" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" required title="Use dashes e.g. 704-123-4567">
+                
 
                 <label for="your_time">Appointment Time</label>  
-                <input type="text" id="your_time" placeholder="Tomorrow at 1pm" required>
+                <!-- <input type="text" id="your_time" placeholder="Tomorrow at 1pm" required> -->
+                <input type="datetime-local" id="your_time" name="your_time" required>
 
                 <label for="preferContact">Preferred Contact Method?</label>
-                <input type="radio" id="phone" name="preferContact" value="phone">
+                <input type="radio" id="phone" name="preferContact" value="phone" required>
                 <label for="phone" name="preferContact">Phone</label><br>
-                <input type="radio" id="email" name="preferContact" value="email">
+                <input type="radio" id="email" name="preferContact" value="email" required>
                 <label for="email" name="preferContact">Email</label><br>
                 
                 <label for="hear">How did you hear about us?</label>
