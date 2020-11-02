@@ -17,6 +17,10 @@
     color: goldenrod;
 }
 
+#searchContainer h4 {
+    font-weight: lighter;
+}
+
 #searchBox input {
     display: block;
     width: 290px;

@@ -59,7 +59,7 @@ form input[type="datetime-local"] {
     color: grey;
 }
 
-form label[name="preferContact"], form input[name="preferContact"] {
+form label[for="email"], form label[for="phone"], form input[type="radio"] {
     display: inline-block;
     width: auto;
     background-color: white;
@@ -67,7 +67,7 @@ form label[name="preferContact"], form input[name="preferContact"] {
     font-style: italic;
 }
 
-form label[name="hear"], form input[name="hear"] {
+form label[for="conf"], form label[for="tv"], form label[for="radio"], form label[for="word"], form label[for="other"], form input[type="checkbox"] {
     display: inline-block;
     width: auto;
     background-color: white;
