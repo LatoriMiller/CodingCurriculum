@@ -19,7 +19,7 @@ main{
 .cover{
     grid-area: cover;
     height: 80vh;
-    background-image: url('/images/salonTools.jpg');
+    background-image: url('/CodingCurriculum/01_Core/week04/ecommerce/images/salonTools.jpg');
     background-size: cover;
     background-position: center center;
 }
